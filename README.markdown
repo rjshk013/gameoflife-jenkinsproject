@@ -53,3 +53,5 @@ In the build tab, select shell script. Type the below command to package the app
 clean install or clean package
 
 If you want to create all this steps in a single job ,do this steps & it will automatically compile ,test & create war file .
+
+Note: In order to deploy this generated war file to tomcat ,create job under maven project
