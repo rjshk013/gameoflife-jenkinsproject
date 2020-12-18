@@ -42,3 +42,14 @@ Go to the Post-build Actions section and tick "Publish JUnit test result report"
 Enter "**/target/surefire-reports/*.xml" in the "Test report XMLs" field
 
 save & build the job
+
+Create war file:
+-----------------
+Create one more freestyle project and add the source code repository URL
+in the build trigger tab, select build when other projects are built
+give previous test project job name
+In the build tab, select shell script. Type the below command to package the application in a WAR file:
+
+clean install or clean package
+
+If you want to create all this steps in a single job ,do this steps & it will automatically compile ,test & create war file .
